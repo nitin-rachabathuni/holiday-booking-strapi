@@ -1,0 +1,96 @@
+.containerBlue {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5f7fa;
+  padding: 2rem;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainDesc {
+  @extend .main;
+  align-items: flex-start;
+}
+
+.container {
+  @extend .containerBlue;
+  background-color: #fff;
+}
+
+.desc {
+  max-width: 500px;
+}
+
+.infoBox {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.booking {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookingBorder {
+  border: 1px solid black;
+  border-radius: 12px;
+  height: auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.bookingLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookingDesc {
+  max-width: 500px;
+}
+
+.price {
+  text-align: center;
+  margin: 0;
+}
+
+.room {
+  display: flex;
+  align-items: center;
+}
+
+.roomBed {
+  margin-left: 1rem;
+}
+
+@media (max-width: 767px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  .bookingLine {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .bookingDesc,
+  .room,
+  .dates {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

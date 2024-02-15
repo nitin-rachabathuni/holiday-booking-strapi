@@ -1,0 +1,33 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f5f7fa;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  width: 100%;
+  gap: 1rem;
+}
+
+.date {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+  .filter {
+    flex-direction: column;
+  }
+}

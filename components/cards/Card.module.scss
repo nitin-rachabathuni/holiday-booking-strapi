@@ -1,0 +1,55 @@
+.card {
+  display: flex;
+  flex: 0 0 32.5%;
+  background-color: white;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  align-self: flex-start;
+}
+
+.desc {
+  margin: auto;
+  font-size: 12px;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.price {
+  color: black;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.image {
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+  }
+  .desc {
+    text-align: center;
+  }
+}
